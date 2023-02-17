@@ -1,0 +1,203 @@
+<section class="pagina-home-topo">
+    <header>
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./assets/imagens/pexels-photo-205421.jpeg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-md-block">
+                        <h1 style="color: white;"><strong>Bem vindo ao meu portfolioweb!</strong></h1>
+                        <h3 style="color: white;"><strong>Sou Marcos, analista e desenvolvedor de sistemas.</strong></h3>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/imagens/pexels-lukas-574070.jpg" alt="Segundo Slide">
+                    <div class="carousel-caption d-md-block">
+                        <h1><strong>Deseja um desenvolvedor de qualidade em sua equipe?</strong></h1>
+                        <h3><strong>Avalie meu perfil e projetos, e entre em conatato</strong></h3>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/imagens/contatofig.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-md-block">
+                        <h1><strong>Dúvidas ou sugestões?</strong></h1>
+                        <h3><strong>Clique abaixo e deixe seu feedback</strong></h3>
+                        <br>
+                        <button class="btn btn-primary">Contato</button>
+                      </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Próximo</span>
+                </a>
+              </div>
+        </div>
+    </header>
+</section>
+
+<section>
+    <div class="conteudo-home">
+
+        <div class="conteudo-sobre">
+            <div class="card-sobre">
+                <div class="card text-white border-primary mb-3" style="max-width: 18rem;">
+                    <img class="card-img-top" src="./assets/imagens/recorteteste.png" alt="Imagem de capa do card">
+                    <div class="card-body">   
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success">Contratar</button>
+            
+            </div>
+            <div class="p-sobre">
+                <h3>Sobre</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio perferendis voluptatem sit deleniti impedit dolor, dolorum qui minima praesentium quae. In sint corrupti alias sapiente illum natus neque animi?</p>
+                <br>
+                <ul>
+                    <li *ngFor="let valor of detalhesSobre"> {{valor}}</li>
+                    <br>
+                </ul>
+                <a routerLink="/sobre" class="btn btn-primary">Ver perfil</a>
+            </div>
+        </div>
+    
+        <div class="conteudo-conhecimentos">
+            <h3>Conhecimento em tecnologias</h3>
+            
+            <div class="bloco-main-conhecimentos">
+                <div class="bloco" id="html" (click)="onClick(1)">
+                    <p><strong>HTML5</strong></p>
+                    <img src="./assets/imagens/htmlfig.png" alt="HTML5">
+                </div>
+                <div class="bloco" id="css" (click)="onClick(2)">
+                    <p><strong>CSS3</strong></p>
+                    <img src="./assets/imagens/cssfig.png" alt="CSS3">
+                </div>
+
+                <div class="bloco" id="js" (click)="onClick(3)">
+                    <p><strong>JavaScript</strong></p>
+                    <img src="./assets/imagens/javasfig.png" alt="JavaScript">
+                </div>
+
+
+                <div [class.descricao]="hiddenHtml">
+                    <p><strong style="color:aqua">HTML:</strong> Tags, organização</p>
+                </div>
+                <div [class.descricao]="hiddenCss">
+                    <p><strong style="color:aqua">CSS:</strong> Estilos, posicionamento responsividade</p>
+                </div>
+                <div [class.descricao]="hiddenJs">
+                    <p><strong style="color:aqua">JavaScript:</strong> Dinâmismo, elementos DOM, lógica, orientação a objetos</p>
+                </div>
+                
+    
+                <div class="bloco" id="bootstrap" (click)="onClick(4)">
+                    <p><strong>Bootstrap</strong></p>
+                    <img src="./assets/imagens/bootstrapfig.png" alt="Bootstrap">
+                </div>
+    
+                <div class="bloco" id="angular" (click)="onClick(5)">
+                    <p><strong>Angular</strong></p>
+                    <img src="./assets/imagens/angularfig.png" alt="Angular">
+                </div>
+                
+    
+                <div class="bloco" id="java" (click)="onClick(6)">
+                    <p><strong>Java</strong></p>
+                    <img src="./assets/imagens/javafig.png" alt="Java">
+                </div>
+
+
+                <div [class.descricao]="hiddenBootstrap">
+                    <p><strong style="color:aqua">Bootstrap:</strong> Utilização das ferramentas, melhorias no design</p>
+                </div>
+                <div [class.descricao]="hiddenAngular">
+                    <p><strong style="color:aqua">Angular:</strong> Estruturação MVC, utilização e reutilização de componentes, diretivas</p>
+                </div>
+                <div [class.descricao]="hiddenJava">
+                    <p><strong style="color:aqua">Java:</strong> Orientação a objetos, lógica de programação, estruturaa de dados</p>
+                </div>
+    
+                <div class="bloco" id="spring" (click)="onClick(7)">
+                    <p><strong>SpringBoot</strong></p>
+                    <img src="./assets/imagens/springfig.png" alt="SpringBoot">
+                </div>
+        
+    
+                <div class="bloco" id="mysql" (click)="onClick(8)">
+                    <p><strong>MySQL</strong></p>
+                    <img src="./assets/imagens/mysqlfig.png" alt="MySQL">
+                </div>
+    
+    
+                <div class="bloco" id="git" (click)="onClick(9)">
+                    <p><strong>Git</strong></p>
+                    <img src="./assets/imagens/gitfig.png" alt="Git">
+                </div>
+                <div [class.descricao]="hiddenSpring">
+                    <p><strong style="color:aqua">SpringBoot:</strong> Utilização do Maven, padrão MVC, estrutura de dados, CRUD</p>
+                </div>
+                <div [class.descricao]="hiddenMysql">
+                    <p><strong style="color:aqua">MySQL:</strong> CRUD de dados, junção entre tabelas</p>
+                </div>
+                <div [class.descricao]="hiddenGit">
+                    <p><strong style="color:aqua">Git:</strong> Versionamento de código</p>
+                </div>
+
+            </div>
+        </div>
+    
+        <div class="conteudo-projetos">
+            <h3>Projetos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos unde quam maiores labore similique quae inventore voluptatibus vel pariatur commodi dolore illum et numquam voluptate nostrum, harum aperiam voluptates.</p>
+            <div class="card-projetos">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/imagens/springfig.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h5 class="card-title">Título do card</h5>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                      <a routerLink="/projeto" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/imagens/springfig.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h5 class="card-title">Título do card</h5>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                      <a routerLink="/projeto" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./assets/imagens/springfig.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                      <h5 class="card-title">Título do card</h5>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
+                      <a routerLink="/projeto" class="btn btn-primary">Visitar</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    
+        <div class="conteudo-contato">
+            <h3>Contato</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, libero sunt eum odio error quod deleniti ea, tempora labore nihil eveniet excepturi! Illum quam qui facere ex a sit enim?</p>
+            <a routerLink="/contato" class="btn btn-primary">Contato</a>
+        </div>
+
+    </div>
+</section>
+
+

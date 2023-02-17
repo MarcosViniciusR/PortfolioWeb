@@ -1,0 +1,151 @@
+
+.carousel-caption{
+    top: 30%;
+    color: black;
+    
+}
+@media screen and (min-width: 920px){
+    #carouselExampleIndicators .carousel-inner, #carouselExampleIndicators .carousel-item{
+        height: 80vh;
+    
+    }
+}
+
+@media screen and (max-width: 670px){
+    .carousel-caption > h1{
+        font-size: 30px;
+    }
+    .carousel-caption > h3{
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+    .carousel-caption > h1{
+        font-size: 20px;
+    }
+    .carousel-caption > h3{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 350px){
+    .carousel-caption > h1{
+        font-size: 15px;
+    }
+    .carousel-caption > h3{
+        font-size: 10px;
+    }
+    
+}
+
+
+.cabecalho{
+    background-color: #1d1f2b;
+    padding: 30px;
+    text-align: center;
+    /*border: 1px solid black;*/
+    border-radius: 20px;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
+    margin-bottom: 20px;
+}
+
+.conteudo-home{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.conteudo-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-box{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.p-sobre{
+    max-width: 600px;
+    text-align: left;
+}
+
+.conteudo-conhecimentos{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.bloco{
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px black;
+    flex-wrap: wrap;
+    width: 110px;
+    height: 110px;
+    margin: 10px;
+    background-color: #2B2B45;
+    transition: 1s;
+    
+}
+
+.bloco:hover{
+    transform:scale(1.2);
+
+}
+
+.bloco-main-conhecimentos{
+    padding-top: 30px;
+    margin: auto;
+    justify-content: center;
+    max-width: 400px;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+.conteudo-projetos{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.conteudo-contato{
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card-projetos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin: auto;
+    justify-content: space-evenly;
+    
+}
+
+.card{
+    margin: 10px;
+    background-color: #1d1f2b;
+}
+
+.descricao{
+    display: none;
+}
