@@ -15,16 +15,34 @@
             <h1>Formulário</h1><br>
         <form action="">
             <div class="input-single">
-                <input type="text" name="nome" placeholder="Nome"><br><br>
+                <input type="text" name="nome" placeholder="Nome"><br>
             </div>
             <div class="input-single">
-                <input type="email" name="email" placeholder="Email"><br><br>
+                <input type="email" name="email" placeholder="Email"><br>
             </div>
             <div class="input-single">
-                <input type="text" name="telefone" placeholder="Telefone"><br><br>
+                <input type="text" name="telefone" placeholder="Telefone"><br>
             </div>
+            <div class="container radio">
+                <div class="radio-box">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Dúvida</label>
+                </div>
+                <div class="radio-box">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Sugestão</label>
+                </div>
+                <div class="radio-box">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Contratar</label>
+                </div>
+            </div>
+            <div class="input-single">
+                <input type="text" name="assunto" placeholder="Assunto"><br>
+            </div>
+            
             <div class="text-descricao">
-                <textarea name="descricao" id="descricao" cols="40" rows="1" placeholder="Descricação"></textarea>
+                <textarea name="descricao" id="descricao" cols="40" rows="1" placeholder="Descrição do assunto"></textarea>
             </div><br>
             <button type="submit" class="btn btn-primary">Enviar</button>
             

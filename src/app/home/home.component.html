@@ -11,15 +11,15 @@
                   <div class="carousel-item active">
                     <img class="d-block w-100" src="./assets/imagens/pexels-photo-205421.jpeg" alt="Primeiro Slide">
                     <div class="carousel-caption d-md-block">
-                        <h1 style="color: white;"><strong>Bem vindo ao meu portfolioweb!</strong></h1>
-                        <h3 style="color: white;"><strong>Sou Marcos, analista e desenvolvedor de sistemas.</strong></h3>
+                        <h1 style="color: white;"><strong>Olá! Sou Marcos V. Ribeiro,</strong></h1>
+                        <h3 style="color: white;"><strong>Seja bem vindo ao meu portfolio web!</strong></h3>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src="./assets/imagens/pexels-lukas-574070.jpg" alt="Segundo Slide">
                     <div class="carousel-caption d-md-block">
                         <h1><strong>Deseja um desenvolvedor de qualidade em sua equipe?</strong></h1>
-                        <h3><strong>Avalie meu perfil e projetos, e entre em conatato</strong></h3>
+                        <h3><strong>Avalie meu perfil e projetos, e entre em contato</strong></h3>
                       </div>
                   </div>
                   <div class="carousel-item">
@@ -28,7 +28,7 @@
                         <h1><strong>Dúvidas ou sugestões?</strong></h1>
                         <h3><strong>Clique abaixo e deixe seu feedback</strong></h3>
                         <br>
-                        <button class="btn btn-primary">Contato</button>
+                        <a routerLink="/contato" class="btn btn-primary">Contato</a>
                       </div>
                   </div>
                 </div>
@@ -51,16 +51,16 @@
         <div class="conteudo-sobre">
             <div class="card-sobre">
                 <div class="card text-white border-primary mb-3" style="max-width: 18rem;">
-                    <img class="card-img-top" src="./assets/imagens/recorteteste.png" alt="Imagem de capa do card">
+                    <img class="card-img-top" src="./assets/imagens/euoriginal-removebg-preview.png" alt="Imagem de capa do card">
                     <div class="card-body">   
                     </div>
                 </div>
-                <button type="button" class="btn btn-success">Contratar</button>
+                <a routerLink="/contato" class="btn btn-success">Contratar</a>
             
             </div>
             <div class="p-sobre">
                 <h3>Sobre</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut distinctio perferendis voluptatem sit deleniti impedit dolor, dolorum qui minima praesentium quae. In sint corrupti alias sapiente illum natus neque animi?</p>
+                <p>Estudante de análise e desenvolvimento de sistemas e apaixonado por tecnologia! Desenvolvedor frontend e backend, buscando adquirir conhecimento contínuo e atualizado, aplicando de maneira eficiênte e objetiva com muita qualidade em quaisquer atividades.</p>
                 <br>
                 <ul>
                     <li *ngFor="let valor of detalhesSobre"> {{valor}}</li>
@@ -158,32 +158,32 @@
     
         <div class="conteudo-projetos">
             <h3>Projetos</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quos unde quam maiores labore similique quae inventore voluptatibus vel pariatur commodi dolore illum et numquam voluptate nostrum, harum aperiam voluptates.</p>
+            <p>Abaixo, alguns dos meus projetos e tecnologias que foram utilizadas para desenvolve-los. Acesse, avalie e deixe sua sugestão!</p>
             <div class="card-projetos">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/imagens/springfig.png" alt="Imagem de capa do card">
+                    <img class="card-img-top" src="./assets/imagens/ecomaps.png" alt="Porjeto EcoMaps">
                     <div class="card-body">
-                      <h5 class="card-title">Título do card</h5>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a routerLink="/projeto" class="btn btn-primary">Visitar</a>
+                      <h5 class="card-title">EcoMaps Lorena</h5>
+                      <p class="card-text">Aplicativo para localizar ecopontos na cidade de Lorena-SP</p>
+                      <a routerLink="/projeto" class="btn btn-primary">Detalhes</a>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/imagens/springfig.png" alt="Imagem de capa do card">
+                    <img class="card-img-top" src="./assets/imagens/takeyourumbrella.png" alt="Take Your Umbrella App">
                     <div class="card-body">
-                      <h5 class="card-title">Título do card</h5>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a routerLink="/projeto" class="btn btn-primary">Visitar</a>
+                      <h5 class="card-title">Take Your Umbrella</h5>
+                      <p class="card-text">API para verificar a previsão do tempo da cidade de Lorena-SP</p>
+                      <a routerLink="/projeto" class="btn btn-primary">Detalhes</a>
                     </div>
                 </div>
 
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="./assets/imagens/springfig.png" alt="Imagem de capa do card">
+                    <img class="card-img-top" src="./assets/imagens/embreve.png" alt="Imagem de capa do card">
                     <div class="card-body">
                       <h5 class="card-title">Título do card</h5>
-                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o conteúdo do card.</p>
-                      <a routerLink="/projeto" class="btn btn-primary">Visitar</a>
+                      <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer</p>
+                      <a routerLink="/projeto" class="btn btn-primary">Detalhes</a>
                     </div>
                 </div>
 
@@ -193,7 +193,7 @@
     
         <div class="conteudo-contato">
             <h3>Contato</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, libero sunt eum odio error quod deleniti ea, tempora labore nihil eveniet excepturi! Illum quam qui facere ex a sit enim?</p>
+            <p>Gostou do meu portfolio? Dúvidas, sugestões ou deseja entrar em contato? Clique abaixo e preencha o formulário para que possamos nos conectar!</p>
             <a routerLink="/contato" class="btn btn-primary">Contato</a>
         </div>
 

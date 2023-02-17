@@ -23,6 +23,11 @@
     background-color: #2B2B45;
 }
 
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+
 .ver-mais{
     display: flex;
     border-top: 1px solid dodgerblue;
