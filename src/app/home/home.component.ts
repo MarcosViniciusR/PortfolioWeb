@@ -18,6 +18,7 @@ export class HomeComponent {
   hiddenSpring:boolean = true;
   hiddenMysql:boolean = true;
   hiddenGit:boolean = true;
+  hiddenPython:boolean = true;
 
   onClick(valor:number){
     if(valor == 1){
@@ -102,6 +103,16 @@ export class HomeComponent {
         elemento.style.backgroundColor = '#2B2B45';
       }
       this.hiddenGit = !this.hiddenGit;
+    }
+
+    if(valor == 10){
+      let elemento:any = document.getElementById('python')
+      if(elemento.style.backgroundColor != 'dodgerblue'){
+        elemento.style.backgroundColor = 'dodgerblue';
+      }else{
+        elemento.style.backgroundColor = '#2B2B45';
+      }
+      this.hiddenPython = !this.hiddenPython;
     }
     
   }
