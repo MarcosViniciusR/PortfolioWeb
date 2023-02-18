@@ -13,15 +13,15 @@
     <div class="form-segundo-bloco">
         <div class="bloco-form">
             <h1>Formulário</h1><br>
-        <form action="">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
             <div class="input-single">
-                <input type="text" name="nome" placeholder="Nome"><br>
+                <input type="text" name="nome" placeholder="Nome" [(ngModel)]="usuario.nome" required><br>
             </div>
             <div class="input-single">
-                <input type="email" name="email" placeholder="Email"><br>
+                <input type="email" name="email" placeholder="Email" [(ngModel)]="usuario.email" required email><br>
             </div>
             <div class="input-single">
-                <input type="text" name="telefone" placeholder="Telefone"><br>
+                <input type="text" name="telefone" placeholder="Telefone" [(ngModel)]="usuario.telefone"><br>
             </div>
             <div class="container radio">
                 <div class="radio-box">
@@ -38,13 +38,13 @@
                 </div>
             </div>
             <div class="input-single">
-                <input type="text" name="assunto" placeholder="Assunto"><br>
+                <input type="text" name="assunto" placeholder="Assunto" [(ngModel)]="usuario.assunto"><br>
             </div>
             
             <div class="text-descricao">
                 <textarea name="descricao" id="descricao" cols="40" rows="1" placeholder="Descrição do assunto"></textarea>
             </div><br>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Enviar</button>
             
         </form>
         </div>

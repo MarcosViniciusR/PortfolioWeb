@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class ContatoComponent {
 
+  usuario:any = {
+    nome: '', email:'', telefone:'', assunto:''
+  }
+
+  onSubmit(form:any){
+    console.log(form);
+
+    console.log(this.usuario);
+
+  }
+
 }
