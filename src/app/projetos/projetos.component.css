@@ -17,7 +17,6 @@
     margin-right: 10px;
     width: 600px;
     height: 700px;
-    background-color: brown;
     transition: 1s;
 }
 
@@ -32,7 +31,6 @@
 
 .titulo{
     height: 200px;
-   /* background-color: blue; */
 }
 
 .descricao{
@@ -41,7 +39,7 @@
     height: 400px;
     justify-content: center;
     align-items: center;
-  /*  background-color: aqua; */
+    text-align: center;
 }
 
 .descricao-projeto{
@@ -49,7 +47,6 @@
     flex-wrap: wrap;
     width: 460px;
     height: 700px;
-  /*  background-color: blueviolet; */
     justify-content: center;
     align-items: flex-start;
 
