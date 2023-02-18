@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ContatoComponent {
 
   usuario:any = {
-    nome: '', email:'', telefone:'', assunto:''
+    nome: null, email: null, telefone: null, assunto: null
   }
 
   onSubmit(form:any){

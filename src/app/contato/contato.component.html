@@ -4,8 +4,10 @@
             <h1>CONTATO</h1><br><br>
             <p>Possui alguma dúvida ou sugestão? Quer marcar uma entrevista?</p>
             <p>Preencha o formulário e dentro de 24 horas entrarei em contato.</p>
-            <img src="./assets/imagens/emailicon.png" alt="email" style="max-width: 150px;
+            <div class="image-form">
+                <img src="./assets/imagens/emailicon.png" alt="email" style="max-width: 150px;
                 height: 150px;">
+            </div>
         </div>
     </div>
 
@@ -15,10 +17,16 @@
             <h1>Formulário</h1><br>
         <form #f="ngForm" (ngSubmit)="onSubmit(f)">
             <div class="input-single">
-                <input type="text" name="nome" placeholder="Nome" [(ngModel)]="usuario.nome" required><br>
+                <input type="text" name="nome" placeholder="Nome" [(ngModel)]="usuario.nome" required #nome="ngModel"><br>
+            </div>
+            <div *ngIf="!nome.valid && nome.touched" class="alert alert-danger" role="alert">
+                <p class="alerta">O campo nome é obrigatório!</p>
             </div>
             <div class="input-single">
-                <input type="email" name="email" placeholder="Email" [(ngModel)]="usuario.email" required email><br>
+                <input type="email" name="email" placeholder="Email" [(ngModel)]="usuario.email" required email #email="ngModel"><br>
+            </div>
+            <div *ngIf="!email.valid && email.touched" class="alert alert-danger" role="alert">
+                <p class="alerta">O campo email é obrigatório!</p>
             </div>
             <div class="input-single">
                 <input type="text" name="telefone" placeholder="Telefone" [(ngModel)]="usuario.telefone"><br>
@@ -38,7 +46,10 @@
                 </div>
             </div>
             <div class="input-single">
-                <input type="text" name="assunto" placeholder="Assunto" [(ngModel)]="usuario.assunto"><br>
+                <input type="text" name="assunto" placeholder="Assunto" [(ngModel)]="usuario.assunto" required #assunto="ngModel"><br>
+            </div>
+            <div *ngIf="!assunto.valid && assunto.touched" class="alert alert-danger" role="alert">
+                <p class="alerta">O campo assunto é obrigatório!</p>
             </div>
             
             <div class="text-descricao">
