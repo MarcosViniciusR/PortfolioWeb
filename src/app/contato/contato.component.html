@@ -15,9 +15,13 @@
     <div class="form-segundo-bloco">
         <div class="bloco-form">
             <h1>Formulário</h1><br>
-        <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <form ngNoForm action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="3935ba76-bf7b-4d0f-ade7-ffba6a5e80d6">
+            <input type="hidden" name="redirectTo" value="http://localhost:4200/">
+
+
             <div class="input-single">
-                <input type="text" name="nome" placeholder="Nome" [(ngModel)]="usuario.nome" required #nome="ngModel"><br>
+                <input type="text" name="name" placeholder="Nome" [(ngModel)]="usuario.nome" required #nome="ngModel"><br>
             </div>
             <div *ngIf="!nome.valid && nome.touched" class="alert alert-danger" role="alert">
                 <p class="alerta">O campo nome é obrigatório!</p>
@@ -29,7 +33,7 @@
                 <p class="alerta">O campo email é obrigatório!</p>
             </div>
             <div class="input-single">
-                <input type="text" name="telefone" placeholder="Telefone" [(ngModel)]="usuario.telefone"><br>
+                <input type="text" name="phone" placeholder="Telefone" [(ngModel)]="usuario.telefone"><br>
             </div>
             <div class="container radio">
                 <div class="radio-box">
@@ -46,16 +50,16 @@
                 </div>
             </div>
             <div class="input-single">
-                <input type="text" name="assunto" placeholder="Assunto" [(ngModel)]="usuario.assunto" required #assunto="ngModel"><br>
+                <input type="text" name="subject" placeholder="Assunto" [(ngModel)]="usuario.assunto" required #assunto="ngModel"><br>
             </div>
             <div *ngIf="!assunto.valid && assunto.touched" class="alert alert-danger" role="alert">
                 <p class="alerta">O campo assunto é obrigatório!</p>
             </div>
             
             <div class="text-descricao">
-                <textarea name="descricao" id="descricao" cols="40" rows="1" placeholder="Descrição do assunto"></textarea>
+                <textarea name="message" id="descricao" cols="40" rows="1" placeholder="Descrição do assunto"></textarea>
             </div><br>
-            <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Enviar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
             
         </form>
         </div>
