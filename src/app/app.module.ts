@@ -10,6 +10,7 @@ import { ContatoComponent } from './contato/contato.component';
 import { ProjetosComponent } from './projetos/projetos.component';
 import { NavComponent } from './nav/nav.component';
 import { FooterComponent } from './footer/footer.component';
+import { BreveComponent } from './breve/breve.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
     ContatoComponent,
     ProjetosComponent,
     NavComponent,
-    FooterComponent
+    FooterComponent,
+    BreveComponent
   ],
   imports: [
     FormsModule,
