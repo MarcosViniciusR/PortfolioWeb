@@ -51,3 +51,33 @@
     align-items: flex-start;
 
 }
+
+@media screen and (max-width: 500px){
+    .primeiro-projeto{
+        height: 500px;
+    }
+    
+    .titulo{
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .primeiro-projeto{
+        height: 400px;
+    }
+
+    .titulo{
+        height: 350px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+    .primeiro-projeto{
+        height: 300px;
+    }
+
+}
