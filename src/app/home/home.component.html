@@ -66,14 +66,14 @@
                     <li *ngFor="let valor of detalhesSobre"> {{valor}}</li>
                     <br>
                 </ul>
-                <a routerLink="/sobre" class="btn btn-primary">Ver perfil</a>
+                <div class="btn-sobre">
+                    <a routerLink="/sobre" class="btn btn-primary">Ver perfil</a>
+                </div>
             </div>
         </div>
     
         <div class="conteudo-conhecimentos">
             <h3><strong>Conhecimento em tecnologias</strong></h3>
-            <p id="p-ver-definicao">Clique em uma tecnologia e veja a definição mais abaixo</p>
-            
             
             <div class="bloco-main-conhecimentos">
                 <div class="bloco" id="html" (click)="onClick(1)">
@@ -130,6 +130,8 @@
                     <p><strong>Python</strong></p>
                     <img src="./assets/imagens/python.png" alt="Python" width="60px">
                 </div>
+
+                <p id="p-ver-definicao">Clique em uma tecnologia acima veja a definição</p>
 
                 <div [class.descricao]="hiddenHtml">
                     <p><strong style="color:aqua">HTML:</strong> Tags, organização</p>

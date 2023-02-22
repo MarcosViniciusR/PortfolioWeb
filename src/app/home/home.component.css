@@ -87,6 +87,13 @@
     text-align: left;
 }
 
+.btn-sobre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .conteudo-conhecimentos{
     flex-wrap: wrap;
     justify-content: center;
