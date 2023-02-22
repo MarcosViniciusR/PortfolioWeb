@@ -92,3 +92,22 @@
     align-items: center;
     align-content: center;
 }
+
+@media screen and (max-width:500px){
+    .main{
+        height: 1400px;
+        width: 300px;
+    }
+
+    .form-primeiro-bloco, .form-segundo-bloco{
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .main{
+        height: 1400px;
+    }
+
+}

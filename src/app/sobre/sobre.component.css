@@ -1,6 +1,7 @@
 .titulo-sobre{
     margin-top: 70px;
     text-align: justify;
+    border-bottom: 1px solid dodgerblue;
 }
 
 .titulo{
@@ -30,7 +31,7 @@
 
 .ver-mais{
     display: flex;
-    border-top: 1px solid dodgerblue;
+    border-bottom: 1px solid dodgerblue;
     padding: 5px;
     justify-content: center;
 }
@@ -44,4 +45,58 @@
     width: 300px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+
+#btn-projetos{
+    width: 100%;
+}
+
+#divisao{
+    padding-top: 40px;
+    border-top: 1px solid dodgerblue;
+}
+
+.exp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    background-color: #2B2B45;
+    border-radius: 5px;
+
+}
+
+.exp-titulo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 200px;
+    border-right: 1px solid gray;
+}
+
+.exp-descricao{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+@media screen and (max-width: 800px){
+
+    .todas-exp{
+        width: 250px;
+    }
+    .exp{
+        flex-wrap: wrap;
+        background-color: none;
+    }
+
+    .exp-descricao{
+        border-top: 1px solid gray;
+        border-right: 1px solid gray;
+        width: 200px;
+    }
+
 }
