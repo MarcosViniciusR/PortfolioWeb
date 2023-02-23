@@ -30,6 +30,18 @@
     }
 }
 
+@media screen and (max-width:410px){
+    #primeira-forma{
+        display: none;
+    }
+}
+
+@media screen and (min-width:410px){
+    #segunda-forma{
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 350px){
     .carousel-caption > h1{

@@ -72,7 +72,7 @@
             </div>
         </div>
     
-        <div class="conteudo-conhecimentos">
+        <div class="conteudo-conhecimentos" id="primeira-forma">
             <h3><strong>Conhecimento em tecnologias</strong></h3>
             
             <div class="bloco-main-conhecimentos">
@@ -134,20 +134,20 @@
                 <p id="p-ver-definicao">Clique em uma tecnologia acima veja a definição</p>
 
                 <div [class.descricao]="hiddenHtml">
-                    <p><strong style="color:aqua">HTML:</strong> Tags, organização</p>
+                    <p><strong style="color:aqua">HTML:</strong> Estruturação do conteúdo da web</p>
                 </div>
                 <div [class.descricao]="hiddenCss">
-                    <p><strong style="color:aqua">CSS:</strong> Estilos, posicionamento de elementos e responsividade</p>
+                    <p><strong style="color:aqua">CSS:</strong> Estilos, posicionamento de elementos, responsividade</p>
                 </div>
                 <div [class.descricao]="hiddenJs">
                     <p><strong style="color:aqua">JavaScript:</strong> Dinâmismo, elementos DOM, lógica de programação</p>
                 </div>
 
                 <div [class.descricao]="hiddenBootstrap">
-                    <p><strong style="color:aqua">Bootstrap:</strong> Utilização das ferramentas disponíveis, melhorias em design</p>
+                    <p><strong style="color:aqua">Bootstrap:</strong> Criação de design responsivo de forma rápida e simples</p>
                 </div>
                 <div [class.descricao]="hiddenAngular">
-                    <p><strong style="color:aqua">Angular:</strong> Estruturação MVC, utilização e reutilização de componentes, diretivas</p>
+                    <p><strong style="color:aqua">Angular:</strong> Páginas SPA, estruturação MVC, utilização e reutilização de componentes, diretivas</p>
                 </div>
                 <div [class.descricao]="hiddenJava">
                     <p><strong style="color:aqua">Java:</strong> Orientação a objetos, lógica de programação, estrutura de dados</p>
@@ -167,6 +167,103 @@
                     <p><strong style="color:aqua">Python:</strong> Lógica de programação, consumo de API, análise de dados</p>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="conteudo-conhecimentos" id="segunda-forma">
+            <h3><strong>Conhecimento em tecnologias</strong></h3>
+            <p id="p-ver-definicao">Clique em uma tecnologia abaixo e veja a definição</p>
+            
+            <div class="bloco-main-conhecimentos">
+                <div class="bloco" id="html" (click)="onClick(1)">
+                    <p><strong>HTML5</strong></p>
+                    <img src="./assets/imagens/htmlfig.png" alt="HTML5">
+                </div>
+                <div class="bloco" id="css" (click)="onClick(2)">
+                    <p><strong>CSS3</strong></p>
+                    <img src="./assets/imagens/cssfig.png" alt="CSS3">
+                </div>
+                <div [class.descricao]="hiddenHtml">
+                    <p><strong style="color:aqua">HTML:</strong> Estruturação do conteúdo da web</p>
+                </div>
+                <div [class.descricao]="hiddenCss">
+                    <p><strong style="color:aqua">CSS:</strong> Estilos, posicionamento de elementos, responsividade</p>
+                </div>
+        
+        
+        
+                <div class="bloco" id="js" (click)="onClick(3)">
+                    <p><strong>JavaScript</strong></p>
+                    <img src="./assets/imagens/javasfig.png" alt="JavaScript">
+                </div>
+                
+        
+                <div class="bloco" id="bootstrap" (click)="onClick(4)">
+                    <p><strong>Bootstrap</strong></p>
+                    <img src="./assets/imagens/bootstrapfig.png" alt="Bootstrap">
+                </div>
+                <div [class.descricao]="hiddenJs">
+                    <p><strong style="color:aqua">JavaScript:</strong> Dinâmismo, elementos DOM, lógica de programação</p>
+                </div>
+        
+                <div [class.descricao]="hiddenBootstrap">
+                    <p><strong style="color:aqua">Bootstrap:</strong> Criação de design responsivo de forma rápida e simples </p>
+                </div>
+        
+                <div class="bloco" id="angular" (click)="onClick(5)">
+                    <p><strong>Angular</strong></p>
+                    <img src="./assets/imagens/angularfig.png" alt="Angular">
+                </div>
+                
+        
+                <div class="bloco" id="java" (click)="onClick(6)">
+                    <p><strong>Java</strong></p>
+                    <img src="./assets/imagens/javafig.png" alt="Java">
+                </div>
+                <div [class.descricao]="hiddenAngular">
+                    <p><strong style="color:aqua">Angular:</strong> Páginas SPA, estruturação MVC, utilização e reutilização de componentes, diretivas</p>
+                </div>
+                <div [class.descricao]="hiddenJava">
+                    <p><strong style="color:aqua">Java:</strong> Orientação a objetos, lógica de programação, estrutura de dados</p>
+                </div>
+        
+        
+                <div class="bloco" id="spring" (click)="onClick(7)">
+                    <p><strong>SpringBoot</strong></p>
+                    <img src="./assets/imagens/springfig.png" alt="SpringBoot">
+                </div>
+        
+        
+                <div class="bloco" id="mysql" (click)="onClick(8)">
+                    <p><strong>MySQL</strong></p>
+                    <img src="./assets/imagens/mysqlfig.png" alt="MySQL">
+                </div>
+                <div [class.descricao]="hiddenSpring">
+                    <p><strong style="color:aqua">SpringBoot:</strong> JPA, API RESTful, Security, JWT</p>
+                </div>
+                <div [class.descricao]="hiddenMysql">
+                    <p><strong style="color:aqua">MySQL:</strong> CRUD de dados, Bancos relacionais e não relacionais, Junção entre tabelas</p>
+                </div>
+        
+        
+                <div class="bloco" id="git" (click)="onClick(9)">
+                    <p><strong>Git</strong></p>
+                    <img src="./assets/imagens/gitfig.png" alt="Git">
+                </div>
+        
+                <div class="bloco" id="python" (click)="onClick(10)">
+                    <p><strong>Python</strong></p>
+                    <img src="./assets/imagens/python.png" alt="Python" width="60px">
+                </div>
+            
+                <div [class.descricao]="hiddenGit">
+                    <p><strong style="color:aqua">Git:</strong> Versionamento de código</p>
+                </div>
+        
+                <div [class.descricao]="hiddenPython">
+                    <p><strong style="color:aqua">Python:</strong> Lógica de programação, consumo de API, análise de dados</p>
+                </div>
+        
             </div>
         </div>
     
